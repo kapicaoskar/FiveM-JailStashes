@@ -20,9 +20,7 @@ end)
 
 
 
-----
-----
----dodaj tutaj tego identifier char1:
+
 ESX.RegisterServerCallback('police:returnStash', function(source, cb)
     local xPlayer = ESX.GetPlayerFromId(source)
     local user = MySQL.Sync.fetchAll("SELECT * FROM `users` WHERE `identifier` = @identifier", {
